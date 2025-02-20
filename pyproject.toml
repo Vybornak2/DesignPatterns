@@ -1,0 +1,11 @@
+[project]
+name = "Training"
+version = "0.1.0"
+description = "Package for learning purposes."
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = ["ipykernel>=6.29.5", "ruff>=0.9.6"]
+
+
+[tool.ruff]
+line-length = 120
