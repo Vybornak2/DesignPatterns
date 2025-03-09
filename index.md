@@ -27,6 +27,14 @@ Welcome to the Python Training project. This document serves as a guide to the c
 - [Text Tasks](./training/lesson4/text_tasks.ipynb)
 - [Loops Tasks](./training/lesson4/loops_tasks.ipynb)
 
+## Design Patterns
+
+### Design Patterns Overview
+- [GoF Principles](./design_patterns/01_principles/GOF.ipynb)
+- [SOLID Principles](./design_patterns/01_principles/SOLID.ipynb)
+- [Other Principles](./design_patterns/01_principles/other_principles.ipynb)
+
 ## Additional Resources
 - [README](./README.md)
 - [Project Configuration](./pyproject.toml)
+
