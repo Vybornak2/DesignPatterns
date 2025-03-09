@@ -5,7 +5,7 @@ Welcome to the Python Training project. This document serves as a guide to the c
 ## Lessons
 
 ### Lesson 1: Basics
-- [Variables, Data types](./training/lesson1/basics.ipynb)
+- [Basics of Python](./training/lesson1/basics.ipynb)
 - [Booleans](./training/lesson1/booleans.ipynb)
 - [Strings](./training/lesson1/strings.ipynb)
 - [Numbers](./training/lesson1/numbers.ipynb)
@@ -18,7 +18,7 @@ Welcome to the Python Training project. This document serves as a guide to the c
 - [Dictionaries](./training/lesson2/dictionaries.ipynb)
 
 ### Lesson 3: Control Flow
-- [Overview](./training/lesson3/overview.ipynb)
+- [Control Flow overview](./training/lesson3/control_flow.ipynb)
 - [Loops](./training/lesson3/loops.ipynb)
 - [Conditional Statements](./training/lesson3/conditionals.ipynb)
 - [Functions](./training/lesson3/functions.ipynb)
