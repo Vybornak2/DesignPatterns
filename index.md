@@ -30,9 +30,9 @@ Welcome to the Python Training project. This document serves as a guide to the c
 ## Design Patterns
 
 ### Design Patterns Overview
-- [GoF Principles](./design_patterns/01_principles/GOF.ipynb)
-- [SOLID Principles](./design_patterns/01_principles/SOLID.ipynb)
-- [Other Principles](./design_patterns/01_principles/other_principles.ipynb)
+- [GoF Principles](./design_patterns/_01_principles/GOF.ipynb)
+- [SOLID Principles](./design_patterns/_01_principles/SOLID.ipynb)
+- [Other Principles](./design_patterns/_01_principles/other_principles.ipynb)
 
 ## Additional Resources
 - [README](./README.md)
