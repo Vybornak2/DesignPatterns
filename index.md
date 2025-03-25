@@ -27,6 +27,9 @@ Welcome to the Python Training project. This document serves as a guide to the c
 - [Text Tasks](./training/lesson4/text_tasks.ipynb)
 - [Loops Tasks](./training/lesson4/loops_tasks.ipynb)
 
+### Lesson 5: Object-Oriented Programming
+- [Classes](./training/lesson5/classes.ipynb)
+
 ## Design Patterns
 
 ### Design Patterns Overview
