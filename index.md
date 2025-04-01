@@ -43,6 +43,9 @@ Welcome to the Python Training project. This document serves as a guide to the c
 ### Structural Patterns
 - [Structural Patterns Overview](./design_patterns/_03_structural_patterns/structural_patterns.ipynb)
 
+### Behavioral Patterns
+- [Behavioral Patterns Overview](./design_patterns/_04_behavioral_patterns/behavioral_patterns.ipynb)
+
 ## Additional Resources
 - [README](./README.md)
 - [Project Configuration](./pyproject.toml)

@@ -4,7 +4,12 @@ version = "0.1.0"
 description = "Package for learning purposes."
 readme = "README.md"
 requires-python = ">=3.11"
-dependencies = ["ipykernel>=6.29.5", "ruff>=0.9.6"]
+dependencies = [
+    "ipykernel>=6.29.5",
+    "pyparsing>=3.2.3",
+    "ruff>=0.9.6",
+    "state-machine>=0.2.10",
+]
 
 
 [tool.ruff]
