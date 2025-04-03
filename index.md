@@ -38,7 +38,7 @@ Welcome to the Python Training project. This document serves as a guide to the c
 - [Other Principles](./design_patterns/_01_principles/other_principles.ipynb)
 
 ### Creational Patterns
-- [Creational Patterns Overview](./design_patterns/_02_creational_patterns/creational_patterns.ipynb)
+- [Creational Patterns Overview](./design_patterns/_02_creational_patterns/creational_patterns.md)
 
 ### Structural Patterns
 - [Structural Patterns Overview](./design_patterns/_03_structural_patterns/structural_patterns.ipynb)
