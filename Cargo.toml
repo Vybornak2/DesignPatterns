@@ -1,0 +1,23 @@
+bin = [
+    { name = "abstract_factory", path = "Rust/p01_creational_patterns/abstract_factory.rs" },
+    { name = "factory", path = "Rust/p01_creational_patterns/factory.rs" },
+    { name = "builder", path = "Rust/p01_creational_patterns/builder.rs" },
+]
+
+[package]
+name = "DesignPatterns"
+version = "0.1.0"
+edition = "2024"
+
+[profile.dev]
+panic = "abort"
+
+[lints.rust]
+unsafe_code = "forbid"       # You shouldn't write unsafe code
+unstable_features = "forbid" # You don't need unstable features
+
+[lints.clippy]
+todo = "forbid"        # You forgot a `todo!()
+empty_loop = "forbid"  # This can only happen by mistake in Rustlings
+infinite_loop = "deny" # No infinite loops are needed in Rustlings
+mem_forget = "deny"    # You shouldn't leak memory while still learning Rust
