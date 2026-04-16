@@ -31,3 +31,7 @@ htmlcov/
 # Distribution / packaging
 dist/
 build/
+
+# Added by cargo
+
+/target
