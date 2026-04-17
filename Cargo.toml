@@ -4,6 +4,7 @@ bin = [
     { name = "object_pool", path = "Rust/p01_creational_patterns/object_pool.rs" },
     { name = "singleton", path = "Rust/p01_creational_patterns/singleton.rs" },
     { name = "prototype", path = "Rust/p01_creational_patterns/prototype.rs" },
+    { name = "abstract_factory", path = "Rust/p01_creational_patterns/abstract_factory.rs" },
 ]
 
 [package]
