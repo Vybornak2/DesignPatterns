@@ -1,5 +1,4 @@
 // Factory Method Pattern
-//
 
 pub trait Transport {
     fn deliver(&self);
