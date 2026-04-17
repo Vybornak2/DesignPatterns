@@ -1,3 +1,5 @@
+// Object Pool pattern
+
 use std::ops::{Deref, DerefMut};
 use std::sync::{Arc, Mutex};
 
@@ -52,6 +54,7 @@ impl DerefMut for PooledObject {
 }
 
 impl Pool {
+
     fn checkout(&self) -> Result<PooledObject, PoolError> {
         let mut items = self.available.lock().unwrap();
         // For single threaded: let mut items = self.available.borrow_mut();
