@@ -8,20 +8,22 @@ Welcome to the Python Training project. This document serves as a guide to the c
 - [Rust](./Rust/Overview.ipynb)
 
 ### Design Patterns Overview
-- [GoF Principles](./design_patterns/_01_principles/GOF.ipynb)
-- [SOLID Principles](./design_patterns/_01_principles/SOLID.ipynb)
-- [Other Principles](./design_patterns/_01_principles/other_principles.ipynb)
+- [GoF Principles](./Python/p01_principles/GOF.ipynb)
+- [SOLID Principles](./Python/p01_principles/SOLID.ipynb)
+- [Other Principles](./Python/p01_principles/other_principles.ipynb)
 
 ### Creational Patterns
-- [Creational Patterns Overview](./design_patterns/_02_creational_patterns/creational_patterns.md)
+- [Creational Patterns Overview](./Python/p02_creational/overview.md)
 
 ### Structural Patterns
-- [Structural Patterns Overview](./design_patterns/_03_structural_patterns/structural_patterns.ipynb)
+- [Structural Patterns Overview](./Python/p03_structural/overview.md)
 
 ### Behavioral Patterns
-- [Behavioral Patterns Overview](./design_patterns/_04_behavioral_patterns/behavioral_patterns.ipynb)
+- [Behavioral Patterns Overview](./Python/p04_behavioral/overview.md)
 
 # Rust
+
+Kept as files in respective folders, no index file for Rust as of now.
 
 ## Additional Resources
 - [README](./README.md)
