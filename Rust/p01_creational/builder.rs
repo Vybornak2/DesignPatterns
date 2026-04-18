@@ -1,5 +1,9 @@
 // Builder Pattern
 
+// NOTE: #[derive(Debug)]
+// Implement default formatting for the type
+// print with {:?}
+// pretty printing with {:#?}
 #[derive(Debug)]
 enum Engine {
     Gasoline,

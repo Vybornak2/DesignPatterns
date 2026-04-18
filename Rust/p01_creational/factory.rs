@@ -29,6 +29,19 @@ fn get_transport(name: &str) -> Result<Box<dyn Transport>, String> {
     }
 }
 
+// NOTE: Error Handling Options
+// - Result<T, E>: Used for recoverable errors
+// - Option<T>: Used when a value may be absent (None) or present (Some)
+// - panic!: Used for unrecoverable errors, will terminate the program
+// - Error Propagation: Use the ? operator to propagate errors up the call stack
+// - unwrap, unwrap_or, unwrap_or_else: Methods to handle Result and Option values
+// - expect: Similar to unwrap but allows you to provide a custom error message
+
+// NOTE: Result Matching vs Unwrap / Expect
+// - Matching: Allows you to handle both success (Ok) and error (Err) cases
+// - Unwrap: Panics if the Result is an Err, should be used when you are sure it won't fail or in tests
+// - Expect: Similar to unwrap but allows you to provide a custom error message, useful for debugging
+
 fn main() {
     let transport = get_transport("truck");
     match transport {

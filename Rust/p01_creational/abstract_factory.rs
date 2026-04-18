@@ -1,5 +1,6 @@
 // Abstract Factory Pattern
-// --- 1. Abstract Products (Traits) ---
+
+// Abstract Products
 
 trait Engine {
     fn get_specs(&self) -> String;
@@ -9,7 +10,7 @@ trait Transmission {
     fn get_type(&self) -> String;
 }
 
-// --- 2. Concrete Products (Sports Family) ---
+// Concrete Products (Sports Family)
 
 struct HighPerformanceEngine;
 impl Engine for HighPerformanceEngine {
@@ -25,7 +26,7 @@ impl Transmission for ManualTransmission {
     }
 }
 
-// --- 3. Concrete Products (Family Family) ---
+// Concrete Products (Family Family)
 
 struct EfficientEngine;
 impl Engine for EfficientEngine {
@@ -41,14 +42,23 @@ impl Transmission for AutomaticTransmission {
     }
 }
 
-// --- 4. The Abstract Factory ---
+// The Abstract Factory
 
 trait CarPartFactory {
     fn create_engine(&self) -> Box<dyn Engine>;
     fn create_transmission(&self) -> Box<dyn Transmission>;
 }
+// NOTE: Trait Objects
+// trait objects size depends on concrete type
+// Trait objects are:
+// - unsized (size not known at compile time)
+// - DST (Dynamically Sized Types)
+//
+// NOTE: Box<dyn Trait>
+// dynamic dispatch for trait objects @ runtime
+// Box fixed size pointer to heap-allocated data, allowing us to work with trait objects
 
-// --- 5. Concrete Factories ---
+// Concrete Factories
 
 struct SportsFactory;
 impl CarPartFactory for SportsFactory {
@@ -70,12 +80,24 @@ impl CarPartFactory for FamilyFactory {
     }
 }
 
-// --- 6. The Client ---
+// Client Code
 
 struct CarAssembler {
     engine: Box<dyn Engine>,
     transmission: Box<dyn Transmission>,
 }
+
+// NOTE: Static Dispatch with Generics
+// struct CarAssembler<E: Engine, T: Transmission> {
+//     engine: E,
+//     transmission: T,
+// }
+//
+// NOTE: Static Dispatch and Polymorphism / Monomorphization
+// Monomorphization - Rust generates specific code for each concrete type used with generics at compile time
+// in this case comiled code contains two versions of CarAssembler:
+// - CarAssembler<HighPerformanceEngine, ManualTransmission>
+// - CarAssembler<EfficientEngine, AutomaticTransmission>
 
 impl CarAssembler {
     fn new(factory: &dyn CarPartFactory) -> Self {
@@ -92,7 +114,6 @@ impl CarAssembler {
 }
 
 fn main() {
-    // Choose the factory (theme)
     let sports_factory: Box<dyn CarPartFactory> = Box::new(SportsFactory);
     let family_factory: Box<dyn CarPartFactory> = Box::new(FamilyFactory);
 
@@ -103,4 +124,8 @@ fn main() {
     let family_car = CarAssembler::new(&*family_factory);
     println!("\nFamily Car Specs:");
     family_car.show_specs();
+
+    // NOTE: Dereferencing Box<dyn Trait>
+    // Box is a smart pointer - access inner value with * operator
+    // &*sports_factory - dereference Box to get &dyn CarPartFactory
 }

@@ -1,3 +1,4 @@
+// NOTE: Not a singleton
 // From Refactoring Guru: https://refactoring.guru/design-patterns/singleton/rust/example
 //!    A pure safe way to implement Singleton in Rust is using no static variables
 //!    and passing everything around through function arguments.

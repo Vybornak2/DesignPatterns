@@ -5,6 +5,8 @@ bin = [
     { name = "singleton", path = "Rust/p01_creational/singleton.rs" },
     { name = "prototype", path = "Rust/p01_creational/prototype.rs" },
     { name = "abstract_factory", path = "Rust/p01_creational/abstract_factory.rs" },
+
+    { name = "adapter", path = "Rust/p02_structural/adapter.rs" },
 ]
 
 [package]
